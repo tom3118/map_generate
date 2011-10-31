@@ -1,0 +1,3 @@
+[console_scripts]
+map_generate = map_generate.map_generate:main
+

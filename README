@@ -1,0 +1,17 @@
+This package installs a script that provides methods to extract line segments 
+from an image and also to
+write such segments as walls in a simpedia-readable xml format
+
+This script takes an image, performs edge detection followed by a Probabilistic
+Hough Transform to find straight lines.  It then creates a simpedia <obstacles>
+element that contains each of these lines as a wall.
+
+The transform params were cribed without thought from 
+http://scikits-image.org/docs/0.3/auto_examples/plot_hough_transform.html
+(hence there is plenty of room for improvement)
+
+Additional functionality: there are now options for applying line-thinning
+to correct the thickness of walls.
+
+@author: tom.temple@vecna.com
+11/24/2011
